@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <script>
+        /*Реализовать основные 4 арифметические операции (+, -, /, *) в виде функций с
+        двумя параметрами. Т.е. например, функция для сложения должна принимать два числа,
+        складывать их и возвращать результат. Обязательно использовать оператор return.
+        */
+
+        function add(num1, num2) {
+            let result = num1 + num2
+            return result
+        }
+
+        function subtraction(num1, num2) {
+            let result = num1 - num2
+            return result
+        }
+
+        function multiplication(num1, num2) {
+            let result = num1 * num2
+            return result
+        }
+
+        function division(num1, num2) {
+            let result = num1 / num2
+            return result
+        }
+
+        alert(add(parseInt(prompt("Первое число")), parseInt(prompt("Второе число"))))
+        alert(subtraction(parseInt(prompt("Первое число")), parseInt(prompt("Второе число"))))
+        alert(multiplication(parseInt(prompt("Первое число")), parseInt(prompt("Второе число"))))
+        alert(division(parseInt(prompt("Первое число")), parseInt(prompt("Второе число"))))
+        
+    </script>
+</body>
+
+</html>
