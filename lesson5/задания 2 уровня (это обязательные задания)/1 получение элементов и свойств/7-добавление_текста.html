@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="#">ссылка</a>
+    <a href="#"></a>
+    <a href="#">ссылка</a>
+    <a href="#"></a>
+
+    <!-- Задание.
+    1. Получите все ссылки.
+    2. Проверьте, есть ли в ссылке текст "ссылка", и если нет, то добавьте. -->
+
+    <script>
+        'use strict';
+
+        // Данное решение у меня не срабатывает, посмотрел у Вас решение, оказывается дело в переменной, которую я завожу для document.links,
+        // а у Вы напрямую перебираете ссылки. Почему не срабатывает моё решение?
+        let obj = document.links;
+        console.log(obj);
+        
+        for (let i = 0; i < obj.length; i++) {
+            if (obj[i].text != 'ссылка'){
+                obj[i].innerText('ссылка');
+            }
+        }
+
+        console.log(obj);
+
+
+
+    </script>
+</body>
+</html>

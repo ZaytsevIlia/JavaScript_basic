@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+
+    <!-- Задание. Выведите в консоль значение атрибутов data-dismiss
+    и aria-label с помощью метода getAttribute. -->
+
+    <script>
+        'use strict';
+
+
+        // Вариант 1
+        let obj = document.querySelector('[data-dismiss]');
+        console.log(obj.getAttribute('data-dismiss'));
+        let obj2 = document.querySelector('[aria-label]');
+        console.log(obj2.getAttribute('aria-label'));
+
+        // Вариант 2
+        let classClose = document.querySelector('.close');
+        console.log(classClose.getAttribute('data-dismiss'));
+        console.log(classClose.getAttribute('aria-label'));
+
+        // Сделал два варианта, так как в условии не было сказано ничего про класс или к чему можно было ещё обратиться.
+        // Поэтому на всякий случай сделал вариант 1.
+
+    </script>
+</body>
+
+</html>
