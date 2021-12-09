@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <script>
+        /*Реализовать функцию с тремя параметрами: function mathOperation(arg1, arg2, operation),
+        где arg1, arg2 – значения аргументов, operation – строка с названием операции. В зависимости от
+        переданного значения операции (использовать switch) выполнить одну из арифметических операций
+        (использовать функции из задания 4) и вернуть полученное значение.
+        */
+        
+        function mathOperation(arg1, arg2, operation) {
+            switch (operation.toLowerCase()) {
+                case 'сложение':
+                    alert(arg1 + arg2)
+                    break;
+                case 'вычитание':
+                    alert(arg1 - arg2)
+                    break;
+                case 'умножение':
+                    alert(arg1 * arg2)
+                    break;
+                case 'деление':
+                    alert(arg1 / arg2)
+                    break;
+            
+                default:
+                    alert('Введено некорректное действие')
+                    break;
+            }
+        }
+
+        
+        mathOperation(parseInt(prompt("Первое число")), parseInt(prompt("Второе число")), prompt("Введите действие (сложение, вычитание, умножение, деление)"))
+
+        
+    </script>
+</body>
+
+</html>
